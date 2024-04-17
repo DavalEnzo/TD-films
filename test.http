@@ -1,0 +1,102 @@
+GET http://localhost:3000/api/realisateur/
+Content-Type: application/json
+###
+
+GET http://localhost:3000/api/realisateur/661fe59384c0bba44fe7e731
+
+###
+
+POST http://localhost:3000/api/realisateur/
+Content-Type: application/json
+
+{
+  "name": "Steven Spielberg",
+  "birthDate": "1946-12-18"
+}
+
+###
+
+PUT http://localhost:3000/api/realisateur/661fe68f84c0bba44fe7e73f
+Content-Type: application/json
+
+{
+  "name": "Steven Spielberg modifié",
+  "birthDate": "1946-12-18",
+  "biography": "Réalisateur américain"
+}
+
+###
+
+DELETE http://localhost:3000/api/realisateur/661fe68f84c0bba44fe7e73f
+
+###
+
+GET http://localhost:3000/api/film/
+
+###
+
+GET http://localhost:3000/api/film/661fe812b9b26bbc3f2294c7
+
+###
+
+POST http://localhost:3000/api/film/
+Content-Type: application/json
+
+{
+  "title": "Jurassic Park",
+  "releaseDate": "1993-06-09",
+  "directors": ["661fe60984c0bba44fe7e738"]
+}
+
+###
+
+PUT http://localhost:3000/api/film/661fe812b9b26bbc3f2294c7
+Content-Type: application/json
+
+{
+  "title": "Jurassic Park modifié",
+  "releaseDate": "1993-06-09",
+  "directors": ["661fe60984c0bba44fe7e738"]
+}
+
+###
+
+DELETE http://localhost:3000/api/film/661fe812b9b26bbc3f2294c7
+
+###
+
+GET http://localhost:3000/api/session/
+
+###
+
+GET http://localhost:3000/api/session/661fe8bfb9b26bbc3f2294ce
+
+###
+
+POST http://localhost:3000/api/session/
+Content-Type: application/json
+
+{
+  "date": "2021-06-09",
+  "film": "661fe812b9b26bbc3f2294c7",
+  "time": "20:00",
+  "availableSeats": 100
+}
+
+###
+
+PUT http://localhost:3000/api/session/661fe8bfb9b26bbc3f2294ce
+Content-Type: application/json
+
+{
+  "date": "2021-06-09",
+  "film": "661fe812b9b26bbc3f2294c7",
+  "time": "18:00",
+  "availableSeats": 80
+}
+
+###
+
+DELETE http://localhost:3000/api/session/661fe8bfb9b26bbc3f2294ce
+
+
